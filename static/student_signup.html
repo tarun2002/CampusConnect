@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Student Sign Up</title>
+  <link rel="stylesheet" type="text/css" href="style/student_signup.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+<script src="../alerts.js"></script>
 </head>
 <body>
-    
+  <div class="login-box">
+    <h1>Student Sign Up</h1>
+    <form action="/student_signup" method="post">
+      <div class="textbox">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <input type="text" placeholder="Username eg.19PA1A05F2" name="student_username">
+      </div>
+      
+      <div class="textbox">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <input type="email" placeholder="College Email" name="student_email">
+      </div>
+
+      <div class="textbox">
+        <i class="fa fa-lock" aria-hidden="true"></i>
+        <input type="password" placeholder="Password" name="student_password" id="spassword">
+      </div>
+      
+      <div class="textbox">
+        <i class="fa fa-lock" aria-hidden="true"></i>
+        <input type="password" placeholder="Confirm Password" name="student_confirm_Password" id="sconfirmPassword">
+      </div>
+      <span id="errorMessage" style="color: white; display: none;">Passwords do not match!</span>
+      <input type="submit" class="btn" value="Sign Up">
+      <a class="login"  href="./student_login.html">Log In</a>
+      
+    </form>
+  </div>
+  <script>
+  const password = document.querySelector('#spassword');
+const confirmPassword = document.querySelector('#sconfirmPassword');
+const errorMessage = document.querySelector('#errorMessage');
+
+  confirmPassword.addEventListener("input", function() {
+    if (password.value !== confirmPassword.value) {
+      errorMessage.style.display = "block";
+    } else {
+      errorMessage.style.display = "none";
+    }
+  });
+</script>
 </body>
 </html>

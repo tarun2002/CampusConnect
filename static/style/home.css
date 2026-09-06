@@ -1,0 +1,90 @@
+body{
+  max-width: 100%;
+  background-color: #1F2833;
+}
+.btn{
+  margin: 10px;
+}
+.substudent{
+  color: #1F2833;
+  font-size: 2em ;
+}
+.subadmin{
+  color: white;
+  font-size: 2em ;
+}
+.title{
+  color:#45A29E;
+  font-size: xx-large ;
+  font-family: 'Tilt Prism', cursive;
+}
+.resume{
+  margin-top: 8%;
+  padding: 10px;
+  color:white;
+  font-size: 4em;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+.matters{
+  margin-top: 5%;
+  color: #45A29E;
+  font-size: 4em;
+  padding: 100px;
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+.alot{
+  margin-top: 4%;
+    color: white;
+  font-size: 5em;
+  padding: 120px;
+  margin-left: 3%;
+  position: relative;
+  
+}
+.logo {
+  text-align: center;
+ font-family: 'Dancing Script', cursive;
+  
+}
+.fun{
+  margin: 2%;
+}
+
+.logo > * {
+  display: block;
+  /* margin: 0 auto; */
+}
+
+.content{
+  padding: 10px;
+  font-size: 1.5em;
+  color: white;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+}
+.students{
+  background-color: #c5c6c7;
+  padding: 20px;
+}
+.students button{
+  background-color: #45A29E;
+  color: #1F2833;
+}
+.btn:hover{
+  background-color: white;
+}
+.admin{
+  background-color: #45A29E;
+  padding: 20px;
+}
+.admin button{
+  background-color: #c5c6c7;
+  color: #1F2833;
+}
+.end{
+  color: #c5c6c7;
+}

@@ -1,0 +1,333 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+}
+
+.student-nav a {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  display: flex;
+  
+  width: 100%;
+  padding: 20px;
+}
+
+.student-profile {
+  text-align: center;
+  width: 25%;
+}
+
+.student-profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.student-content {
+  width: 75%;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .student-profile {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .student-content {
+    width: 100%;
+  }
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  /* padding: 20px; */
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.navbar {
+   background-color: #111;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 70px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  label {
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .radio-buttons label {
+    margin-right: 20px;
+  }
+  .logout{
+    color: white;
+    background-color: black;
+  }
+  button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    /* margin-top: 20px; */
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  input[type="radio"]:focus {
+    outline: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  button[name="pnext"] {
+    float: right;
+  }
+  
+  form {
+    margin: 0 auto;
+    width: 50%;
+    padding: 70px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  body{
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 18px;
+    width: 200px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    
+    font-size: 16px;
+    border: 1px solid #ccc;
+  }
+  
+  .radio-btns {
+    margin-bottom: 20px;
+  }
+  
+  .radio-btns label {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  button[name="prev"] {
+    float: left;
+  }
+  
+  button[name="next"] {
+    float: right;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 70px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  label {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  button[name="prev"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+.greeting{
+    font-weight: bold;
+}

@@ -1,0 +1,10 @@
+.mt-100 {
+  margin-top: 100px;
+}
+body {
+  background: #00b4db;
+  background: -webkit-linear-gradient(to right, #0083b0, #00b4db);
+  background: linear-gradient(to right, #0083b0, #00b4db);
+  color: #514b64;
+  min-height: 100vh;
+}

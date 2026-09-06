@@ -1,0 +1,14 @@
+#showEditMsg {
+  text-align: center !important;
+  color: red !important;
+}
+
+#showEditMsg * {
+  text-align: initial !important;
+}
+.content{
+  text-align: center;
+}
+.col-sm-9{
+  width: 100% !important;
+}

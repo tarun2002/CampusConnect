@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .contact-info {
+            margin-bottom: 10px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+            text-decoration: underline;
+        }
+
+        .section ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .section ul li {
+            margin-bottom: 5px;
+        }
+
+        .section ul li span {
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="name">{{name}}</h1>
+        <div class="contact-info">
+            <p>{{address}}</p>
+            <p>{{email}} | {{phone}}</p>
+        </div>
+    </div>
+    {{#if education}}
+    <div class="section">
+        <h2>Education</h2>
+        <ul>
+            {{#each education}}
+            <li>
+                <span>{{degree}}</span>
+                <p>{{institution}}</p>
+                <p>{{startYear}} - {{endYear}}</p>
+                <p>CGPA: {{cgpa}}</p>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    {{/if}}
+    {{#if projects}}
+    <div class="section">
+        <h2>Projects</h2>
+        <ul>
+            {{#each projects}}
+            <li>
+                <span>{{title}}</span>
+                <p>{{description}}</p>
+                <p>{{technologies}}</p>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    {{/if}}
+    {{#if internships}}
+    <div class="section">
+        <h2>Internships</h2>
+        <ul>
+            {{#each internships}}
+            <li>
+                <span>{{title}}</span>
+                <p>{{description}}</p>
+                <p>{{organization}}</p>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    {{/if}}
+    {{#if skills}}
+    <div class="section">
+        <h2>Skills</h2>
+        <ul>
+            {{#each skills}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+    {{/if}}
+    <div class="footer">
+        <p>{{footerText}}</p>
+    </div>
+</body>
+
+</html>

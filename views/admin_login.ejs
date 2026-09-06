@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login</title>
+  <link rel="stylesheet" type="text/css" href="style/admin_login.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="login-box">
+    <h1>Admin Login</h1>
+    <form action="/admin_login" method="post">
+    <div class="textbox">
+      <i class="fa fa-user" aria-hidden="true"></i>
+      <input type="text" placeholder="Username" name="admin_user">
+    </div>
+    <div class="textbox">
+      <i class="fa fa-lock" aria-hidden="true"></i>
+      <input type="password" placeholder="Password" name="admin_password">
+    </div>
+    <input type="submit" class="btn" value="Sign In">
+    <div id="popup" style="display: none ;"><%= message %></div>
+    <a class="forgot" href="#">Forgot Password</a>
+    </form>
+  </div>
+
+   <% if (togglePopup) { %>
+    <script>
+      function togglePopup() {
+        var popup = document.getElementById('popup');
+        if (popup.style.display === 'none') {
+          popup.style.display = 'block';
+        } else {
+          popup.style.display = 'none';
+        }
+      }
+      window.onload = function() {
+        togglePopup();
+      };
+    </script>
+  <% } %>
+  
+</body>
+
+</html>
